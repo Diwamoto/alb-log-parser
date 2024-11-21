@@ -1,14 +1,19 @@
-package main
+// parse the ALB log string and return a slice of strings containing the matched groups based on the ALB_LOG_REGEXP_STRING regular expression.
+package alb_log_parser
 
 import (
 	"errors"
 	"regexp"
 )
 
+/*
+AlbLogParser represents a parser for ALB logs. It contains a regular expression
+*/
 type AlbLogParser struct {
 	regexp regexp.Regexp
 }
 
+// NewAlbLogParser creates a new instance of AlbLogParser with the default regular expression.
 func NewAlbLogParser() AlbLogParser {
 	return AlbLogParser{
 		regexp: *regexp.MustCompile(ALB_LOG_REGEXP_STRING),

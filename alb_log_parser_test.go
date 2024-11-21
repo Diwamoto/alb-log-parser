@@ -1,4 +1,4 @@
-package main
+package alb_log_parser
 
 import (
 	"reflect"

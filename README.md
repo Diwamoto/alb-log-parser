@@ -11,7 +11,7 @@ A Go library for parsing AWS Application Load Balancer (ALB) access logs. This l
 ## Installation
 
 ```bash
-go get github.com/hacomono-lib/alb-log-parser
+go get github.com/Diwamoto/alb-log-parser
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ import (
     "compress/gzip"
     "os"
     "bufio"
-    albparser "github.com/hacomono-lib/alb-log-parser"
+    albparser "github.com/Diwamoto/alb-log-parser"
 )
 
 func main() {
@@ -78,7 +78,7 @@ package main
 
 import (
     "fmt"
-    albparser "github.com/hacomono-lib/alb-log-parser"
+    albparser "github.com/Diwamoto/alb-log-parser"
 )
 
 func main() {
